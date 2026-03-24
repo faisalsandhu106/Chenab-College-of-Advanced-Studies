@@ -11,7 +11,9 @@ const AdminDashboard = () => {
     const API = "https://chenab-college-backend.vercel.app"
 
     const [adminID, setAdminID] = useState();           //* State to hold logged-in user's id 
-    const [adminData, setAdminData] = useState({});    //* State to hold logged-in user's data
+    const [adminData, setAdminData] = useState({
+        firstName: ""
+    });    //* State to hold logged-in user's data
 
     //* Get Admin Data By ID
     const getAdminData = async () => {
